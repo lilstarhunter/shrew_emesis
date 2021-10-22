@@ -6,12 +6,18 @@ multianimalproject: false
 identity:
 
     # Project path (change when moving around)
-project_path: /Users/laurenstein/Desktop/ShrewVideoTracking/vomitting-LMS-2021-10-19
+project_path: /Users/laurenstein/Desktop/shrew_emesis/vomitting-LMS-2021-10-19
 
     # Annotation data set configuration (and individual video cropping parameters)
 video_sets:
   /Users/laurenstein/Desktop/ShrewVideoTracking/vomitting-LMS-2021-10-19/videos/nicotine_emesis_10.19.21.MP4:
     crop: 86, 924, 49, 582
+  /Users/laurenstein/Desktop/shrew_emesis/vomitting-LMS-2021-10-19/videos/nicotine_emesis_10.19.21_shrew2.mp4:
+    crop: 0, 750, 0, 452
+  /Users/laurenstein/Desktop/shrew_emesis/vomitting-LMS-2021-10-19/videos/nicotine_emesis_10.19.21_shrew3.mp4:
+    crop: 0, 748, 0, 450
+  /Users/laurenstein/Desktop/shrew_emesis/vomitting-LMS-2021-10-19/videos/nicotine_emesis_10.19.21_shrew4.mp4:
+    crop: 0, 748, 0, 450
 bodyparts:
 - snout
 - mandible
