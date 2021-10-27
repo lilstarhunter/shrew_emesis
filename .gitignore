@@ -1,7 +1,7 @@
 # files
 dlc-models/train/
 *.mp4
-*.ipynb
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
