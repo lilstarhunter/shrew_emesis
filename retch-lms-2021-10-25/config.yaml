@@ -6,7 +6,7 @@ multianimalproject: false
 identity:
 
     # Project path (change when moving around)
-project_path: /Users/laurenstein/Desktop/shrew_emesis/retch-lms-2021-10-25
+project_path: /Users/laurenstein/Desktop/ComputerVision/shrew_emesis/retch-lms-2021-10-25
 
     # Annotation data set configuration (and individual video cropping parameters)
 video_sets:
@@ -26,6 +26,8 @@ video_sets:
 #   /content/drive/My Drive/Colab Notebooks/shrew_emesis/retch-lms-2021-10-25/videos/nicotine_101921_shrew4.mp4:
 #     crop: 0, 698, 0, 384
 
+  /Users/laurenstein/Desktop/ComputerVision/shrew_emesis/videos/trimmed/nicotine_10.19.21_shrew4.mp4:
+    crop: 0, 748, 0, 450
 bodyparts:
 - snout
 - mandible
