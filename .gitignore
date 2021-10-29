@@ -1,5 +1,7 @@
 # files
-dlc-models/train/
+.DS_Store
+dlc-models/iteration-0/retchOct25-trainset95shuffle1/train
+dlc-models/iteration-2/retchOct25-trainset95shuffle1/train
 *.mp4
 
 
