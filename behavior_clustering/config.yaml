@@ -1,0 +1,83 @@
+    # Project definitions (do not edit)
+Task: retch
+scorer: lms
+date: Oct25
+multianimalproject: false
+identity:
+
+    # Project path (change when moving around)
+project_path: /Users/laurenstein/Desktop/ComputerVision/shrew_emesis/retch-lms-2021-10-25
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  /Users/laurenstein/Desktop/nicotine_101921_shrew1.mp4:
+    crop: 0, 698, 0, 384
+  /Users/laurenstein/Desktop/nicotine_101921_shrew2.mp4:
+    crop: 0, 698, 0, 384
+  /Users/laurenstein/Desktop/nicotine_101921_shrew4.mp4:
+    crop: 0, 698, 0, 384
+
+#Google Drive Path
+# video_sets:
+#   /content/drive/My Drive/Colab Notebooks/shrew_emesis/retch-lms-2021-10-25/videos/nicotine_101921_shrew1.mp4:
+#     crop: 0, 698, 0, 384
+#   /content/drive/My Drive/Colab Notebooks/shrew_emesis/retch-lms-2021-10-25/videos/nicotine_101921_shrew2.mp4:
+#     crop: 0, 698, 0, 384
+#   /content/drive/My Drive/Colab Notebooks/shrew_emesis/retch-lms-2021-10-25/videos/nicotine_101921_shrew4.mp4:
+#     crop: 0, 698, 0, 384
+
+? /Users/laurenstein/Desktop/ComputerVision/shrew_emesis/retch-lms-2021-10-25/videos/anlaysis_trimmed_102921/nicotine_10.19.21_shrew1.mp4
+: crop: 0, 748, 0, 450
+bodyparts:
+- snout
+- mandible
+- back
+- abdomen
+- tailbase
+
+start: 0
+stop: 1
+numframes2pick: 20
+
+    # Plotting configuration
+skeleton:
+- - snout
+  - mandible
+- - mandible
+  - abdomen
+- - back
+  - abdomen
+- - back
+  - tailbase
+- - abdomen
+  - tailbase
+- - snout
+  - back
+skeleton_color: black
+pcutoff: 0.9
+dotsize: 12
+alphavalue: 0.4
+colormap: rainbow
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: -1
+batch_size: 8
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+    #if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true

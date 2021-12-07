@@ -1,8 +1,24 @@
 # files
 .DS_Store
-dlc-models/iteration-0/retchOct25-trainset95shuffle1/train
-dlc-models/iteration-2/retchOct25-trainset95shuffle1/train
-*.mp4
+# Large video files
+/data/videos/
+/behavior_clustering/B-Soid_Retch/11042021/weak_responder/nicotine_10.19.21_shrew2.mp4
+/behavior_clustering/B-Soid_Retch/11042021/weak_responder/nicotine_10.19.21_shrew4.mp4
+/behavior_clustering/B-Soid_Retch/11042021/strong_responder/nicotine_10.19.21_shrew1.mp4
+
+/behavior_clustering/B-Soid_Retch/11042021/weak_responder/mp4s/nicotine_10.19.21_shrew2DLC_resnet50_retchOct25shuffle1_10000_filtered/*.mp4
+/behavior_clustering/B-Soid_Retch/11042021/weak_responder/mp4s/nicotine_10.19.21_shrew4DLC_resnet50_retchOct25shuffle1_10000_filtered/*.mp4
+/behavior_clustering/B-Soid_Retch/11042021/strong_responder/mp4s/nicotine_10.19.21_shrew1DLC_resnet50_retchOct25shuffle1_10000_filtered/*.mp4
+
+# PNGS used for gifs
+/behavior_clustering/B-Soid_Retch/11042021/strong_responder/pngs
+/behavior_clustering/B-Soid_Retch/11042021/weak_responder/pngs
+
+# Older clustering iterations
+/behavior_clustering/B-Soid_Retch/10272021/
+/behavior_clustering/B-Soid_Retch/11022021/
+/behavior_clustering/B-Soid_Retch/output/10272021
+
 
 
 # Byte-compiled / optimized / DLL files
